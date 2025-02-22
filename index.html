@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--------------------------Link To Owl Carousel----------------------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <title>Education</title>
+</head>
+
+<body>
+    <!----------------Main Div----------------------------------------------------------------------->
+    <div class="website-container">
+
+        <!--------------Home & Navbar Section----------------------------------------------------------->
+        <section class="home" id="home">
+            <nav class="main-navbar">
+                <a href="#" class="logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHilw-LY9Uznx47CHZ0NHQGTI8Ff9wyux5sQ&s" alt="img">
+                </a>
+
+                <!-------------Navbar Menu-------------------------------------------------------------->
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#cources">Courses</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#testimonials">Testimonial</a></li>
+                </ul>
+
+                <!------------Button Tag---------------------------------------------------------------->
+                <a href="#" class="get-started-btn-container">
+                    <button class="get-started-btn btn">Get Started</button>
+                </a>
+
+                <div class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <!-----------------Banner Section------------------------------------------------------------->
+            <div class="banner">
+
+                <div class="banner-desc">
+                    <h2>Start Learning With Our Expects, Anywhere, Anytime</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla blanditiis culpa tempore? Nam accusamus quia voluptatibus optio reprehenderit quaerat veniam doloribus ut exercitationem? Delectus maiores omnis, porro nemo sint tenetur!</p>
+                    <form class="search-bar">
+                        <input type="search" placeholder="Search Your Course">
+                        <i class="fa-solid fa-search"></i>
+                    </form>
+                </div>
+
+                <!--------------Banner Image--------------------------------------------------------------->
+                <div class="banner-img">
+                    <div class="banner-img-container">
+                        <img src="https://cdn.pixabay.com/photo/2023/11/01/07/41/ai-generated-8356763_1280.jpg" alt="img">
+
+                        <div class="states">
+                            <div class="total-courses">
+                                <div class="icon">
+                                    <i class="fa-solid fa-book"></i>
+                                </div>
+                                <div class="desc">
+                                    <span>284+</span>
+                                    <span>Total Courses</span>
+                                </div>
+                            </div>
+
+                            <div class="courses-rating">
+                                <span>4.7<i class="fa-solid fa-star"></i></span>
+                                <span>Ratings<br>(58k)</span>
+                            </div>
+                        </div>
+                        <div class="pattern">
+                            <img src="img/Dots.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--------------------------------------------Partners Slider Section--------------------------------------------->
+        <section class="partners">
+            <h3>Our trusted partners around the world</h3>
+            <div class="owl-carousel owl-theme partners-slider">
+
+                <div class="item brand-item">
+                    <img src="data:image/png;base64,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"
+                        alt="logos">
+                </div>
+                <div class="item brand-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnD0wNefKbc3pK_hkyiI8kPtRNCDueSXpLCA&s" alt="logos">
+                </div>
+                <div class="item brand-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCCiGapc5X-_RbI147APLvSAf65RE8WZznQQ&s" alt="logos">
+                </div>
+                <div class="item brand-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1IOF32ItpMxR1zeE4vw32QI26uxdrxlspEw&s" alt="logos">
+                </div>
+                <div class="item brand-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA0I7NRpjaUNqbM7TnugYl8qKwrLiZYAwKOA&s" alt="logos">
+                </div>
+                <div class="item brand-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIqBcUXxiXwQ-XyOKT6LCJnBMhFmVGayfjBA&s" alt="logos">
+                </div>
+                <div class="item brand-item">
+                    <img src="https://ccweb.imgix.net/https%3A%2F%2Fwww.classcentral.com%2Fimages%2Flogos%2Finstitutions%2Fiitb-hz.png?auto=format&ixlib=php-4.1.0&s=8478fc2554cb23c3efe1486f32ff4570" alt="logos">
+                </div>
+                <div class="item brand-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9F4Fs0sK5VYrMxp3IdHNY73SYnRlNlI0PPA&s" alt="logos">
+                </div>
+                <div class="item brand-item">
+                    <img src="https://www.livelaw.in/cms/wp-content/uploads/2016/05/Pondicherry-University.jpg" alt="logos">
+                </div>
+                <div class="item brand-item">
+                    <img src="https://ignou-nep-pdp-lms.samarth.ac.in/pluginfile.php/1/theme_eguru/logo/1659335408/logo.png" alt="logos">
+                </div>
+                <div class="item brand-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTea9-8tbcwsLO2WHtZ4H8YTU7hs65YFy3pDw&s" alt="logos">
+                </div>
+
+            </div>
+        </section>
+
+        <!------------------------------------------Services Section----------------------------------------->
+        <section class="services" id="services">
+            <header class="section-header">
+                <h1>Why Choose Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis a blanditiis debitis modi? Vel nesciunt ipsam suscipit nam.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                </p>
+            </header>
+
+            <div class="services-contents">
+
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-calendar"></i>
+                    </div>
+                    <div class="service-desc">
+                        <h2>Flexible Timing</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.<br>Lorem ipsum dolor sit amet consectetur.<br>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="service-desc">
+                        <h2>Expert Teachers</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.<br>Lorem ipsum dolor sit amet consectetur.<br>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="service-desc">
+                        <h2>24/7 Live Support</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur.<br>Lorem ipsum dolor sit amet consectetur.<br>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!------------------------------------------Courses Section----------------------------------------->
+
+        <section class="cources" id="cources">
+            <header class="section-header">
+                <div class="header-text">
+                    <h1>Choose Your Favourite Course </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id laudantium necessitatibus ratione exercitationem facilis dolor labore cumque, est voluptate blanditiis minima maxime nulla eveniet, ducimus natus voluptatum qui deleniti?</p>
+                </div>
+                <button class="courses-btn btn">View All</button>
+            </header>
+            <div class="courses-contents">
+
+                <div class="course-card">
+                    <img src="https://cdn.pixabay.com/photo/2020/11/04/14/54/student-5712627_1280.jpg" alt="c">
+                    <div class="category">
+                        <div class="subject">
+                            <h3>Design</h3>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2019/09/19/12/43/girl-4489210_1280.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">Learn Figma: This is some dummy text demonistrating the title</h2>
+                    <div class="course-desc">
+                        <span><i class="fa-solid fa-video"></i>45 videos</span>
+                        <span><i class="fa-solid fa-users"></i>2154+ Students</span>
+                    </div>
+                    <div class="course-ratings">
+                        <span>4.5 <i class="fa-solid fa-star"></i></span>
+                        <span><b>$</b>220.00</span>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://cdn.pixabay.com/photo/2024/04/25/07/41/ai-generated-8719217_1280.jpg" alt="c">
+                    <div class="category">
+                        <div class="subject">
+                            <h3>Design</h3>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2021/04/27/04/15/girl-6210464_1280.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">Learn Figma: This is some dummy text demonistrating the title</h2>
+                    <div class="course-desc">
+                        <span><i class="fa-solid fa-video"></i>45 videos</span>
+                        <span><i class="fa-solid fa-users"></i>2154+ Students</span>
+                    </div>
+                    <div class="course-ratings">
+                        <span>4.3 <i class="fa-solid fa-star"></i></span>
+                        <span><b>$</b>310.00</span>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://cdn.pixabay.com/photo/2022/02/22/15/15/girl-7029038_1280.jpg" alt="c">
+                    <div class="category">
+                        <div class="subject">
+                            <h3>Design</h3>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2012/02/29/11/50/adult-18598_1280.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">Learn Figma: This is some dummy text demonistrating the title</h2>
+                    <div class="course-desc">
+                        <span><i class="fa-solid fa-video"></i>45 videos</span>
+                        <span><i class="fa-solid fa-users"></i>2154+ Students</span>
+                    </div>
+                    <div class="course-ratings">
+                        <span>3.5 <i class="fa-solid fa-star"></i></span>
+                        <span><b>$</b>220.00</span>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://cdn.pixabay.com/photo/2018/06/27/07/45/college-student-3500990_1280.jpg" alt="c">
+                    <div class="category">
+                        <div class="subject">
+                            <h3>Design</h3>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2016/11/14/05/13/academic-1822679_1280.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">Learn Figma: This is some dummy text demonistrating the title</h2>
+                    <div class="course-desc">
+                        <span><i class="fa-solid fa-video"></i>45 videos</span>
+                        <span><i class="fa-solid fa-users"></i>2154+ Students</span>
+                    </div>
+                    <div class="course-ratings">
+                        <span>4.5 <i class="fa-solid fa-star"></i></span>
+                        <span><b>$</b>420.00</span>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://cdn.pixabay.com/photo/2023/03/16/16/20/little-girl-7857049_1280.jpg" alt="c">
+                    <div class="category">
+                        <div class="subject">
+                            <h3>Design</h3>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2023/07/25/10/21/girl-8148749_1280.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">Learn Figma: This is some dummy text demonistrating the title</h2>
+                    <div class="course-desc">
+                        <span><i class="fa-solid fa-video"></i>45 videos</span>
+                        <span><i class="fa-solid fa-users"></i>2154+ Students</span>
+                    </div>
+                    <div class="course-ratings">
+                        <span>4.9 <i class="fa-solid fa-star"></i></span>
+                        <span><b>$</b>120.00</span>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://cdn.pixabay.com/photo/2023/05/22/11/30/woman-8010479_1280.jpg" alt="c">
+                    <div class="category">
+                        <div class="subject">
+                            <h3>Design</h3>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2020/06/21/21/45/library-5326915_1280.jpg" alt="">
+                    </div>
+                    <h2 class="course-title">Learn Figma: This is some dummy text demonistrating the title</h2>
+                    <div class="course-desc">
+                        <span><i class="fa-solid fa-video"></i>45 videos</span>
+                        <span><i class="fa-solid fa-users"></i>2154+ Students</span>
+                    </div>
+                    <div class="course-ratings">
+                        <span>3.5 <i class="fa-solid fa-star"></i></span>
+                        <span><b>$</b>210.00</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!----------------------------------------------Categories Section---------------------------------->
+
+        <section class="categories" id="categories">
+            <header class="section-header">
+                <h1>Brouse Courses By Categories</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ullam, culpa possimus sit libero aliquam quidem inventore omnis.</p>
+            </header>
+
+            <div class="categories-contents">
+
+                <div class="category-item">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <div class="category-desc">
+                        <h3>Designing</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus assumenda quia error perferendis quasi.</p>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="category-desc">
+                        <h3>Development</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus assumenda quia error perferendis quasi.</p>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <div class="category-desc">
+                        <h3>Marketing</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus assumenda quia error perferendis quasi.</p>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <div class="category-desc">
+                        <h3>Photograhpy</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus assumenda quia error perferendis quasi.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!----------------------------------------------Teacher Section ------------------------------------>
+
+        <section class="instructor">
+            <div class="instructor-container">
+                <h2>Become an instructor with Bright future platform</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur est id debitis odit ducimus tempora quia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur est id debitis odit ducimus tempora quia. Lorem ipsum dolor.</p>
+                <button class="teacher-btn btn">Your Details</button>
+            </div>
+        </section>
+
+        <!--------------------------------------------------Testimonial Section----------------------------->
+
+        <section class="testimonials" id="testimonials">
+
+            <header class="section-header">
+                <h1>Testimonials</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere impedit, veniam vitae error numquam voluptatibus ea, aliquid perferendis culpa sed a deleniti harum autem odit voluptas unde animi. Ut, dolor!</p>
+            </header>
+
+            <div class="owl-carousel owl-theme testimonials-slider">
+
+                <div class="item testimonials-item">
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="https://cdn.pixabay.com/photo/2024/03/29/17/43/ai-generated-8663299_1280.png" alt="">
+                        </div>
+                        <div class="profile-desc">
+                            <span>Person Name</span>
+                            <span>Description</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero atque unde minima quidem cumque est esse! Sunt dolor, doloremque odit optio, est cum ex, mollitia tempore voluptate non fugiat! Possimus?</p>
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i>
+                    </div>
+                    <div class="ratings">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="item testimonials-item">
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="https://cdn.pixabay.com/photo/2023/11/01/07/41/ai-generated-8356763_1280.jpg" alt="">
+                        </div>
+                        <div class="profile-desc">
+                            <span>Person Name</span>
+                            <span>Description</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero atque unde minima quidem cumque est esse! Sunt dolor, doloremque odit optio, est cum ex, mollitia tempore voluptate non fugiat! Possimus?</p>
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i>
+                    </div>
+                    <div class="ratings">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="item testimonials-item">
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="https://cdn.pixabay.com/photo/2024/01/21/07/56/ai-generated-8522658_1280.jpg" alt="">
+                        </div>
+                        <div class="profile-desc">
+                            <span>Person Name</span>
+                            <span>Description</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero atque unde minima quidem cumque est esse! Sunt dolor, doloremque odit optio, est cum ex, mollitia tempore voluptate non fugiat! Possimus?</p>
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i>
+                    </div>
+                    <div class="ratings">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="item testimonials-item">
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="https://cdn.pixabay.com/photo/2012/02/23/08/36/beautiful-15704_1280.jpg" alt="">
+                        </div>
+                        <div class="profile-desc">
+                            <span>Person Name</span>
+                            <span>Description</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero atque unde minima quidem cumque est esse! Sunt dolor, doloremque odit optio, est cum ex, mollitia tempore voluptate non fugiat! Possimus?</p>
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i>
+                    </div>
+                    <div class="ratings">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="item testimonials-item">
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="https://cdn.pixabay.com/photo/2021/03/08/20/14/child-6080185_1280.jpg" alt="">
+                        </div>
+                        <div class="profile-desc">
+                            <span>Person Name</span>
+                            <span>Description</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero atque unde minima quidem cumque est esse! Sunt dolor, doloremque odit optio, est cum ex, mollitia tempore voluptate non fugiat! Possimus?</p>
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i>
+                    </div>
+                    <div class="ratings">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------------------Footer Section----------------------------------------->
+
+        <section class="footer" id="footer">
+            <div class="footer-contents">
+                <div class="footer-col footer-col-1">
+                    <div class="col-title">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHilw-LY9Uznx47CHZ0NHQGTI8Ff9wyux5sQ&s" alt="">
+                    </div>
+                    <div class="col-contents">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="footer-col footer-col-2">
+                    <div class="col-title">
+                        <h3>Contact</h3>
+                    </div>
+                    <div class="col-contents">
+                        <div class="contect-row">
+                            <span>Address</span>
+                            <span>Kosi Kalan, India</span>
+                        </div>
+                        <div class="contect-row">
+                            <span>Phone</span>
+                            <span>+91 123-456-7890</span>
+                        </div>
+                        <div class="contect-row">
+                            <span>Webiste</span>
+                            <span>Five-start-tutorials.com</span>
+                        </div>
+                        <div class="contect-row">
+                            <span>Email</span>
+                            <span>xyz123@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-col footer-col-3">
+                    <div class="col-title">
+                        <h3>Quick Links</h3>
+                    </div>
+                    <div class="col-contents">
+                        <a href="#">Home</a>
+                        <a href="#">Services</a>
+                        <a href="#">Courses</a>
+                        <a href="#">Categories</a>
+                        <a href="#">Testimonials</a>
+                    </div>
+                </div>
+
+                <div class="footer-col footer-col-4">
+                    <div class="col-title">
+                        <h3>Newsletter</h3>
+                    </div>
+                    <div class="col-contents">
+                        <form class="newsletter">
+                            <input type="Email" placeholder="Your Email">
+                            <button class="newsletter-btn btn" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="copy-rights">
+                <p>Create by <b>Five Star Tutorials</b> All Rights Reserved</p>
+            </div>
+        </section>
+    </div>
+
+    <!----------------------------------------------Link To JQuery------------------------------------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!----------------------------------------------Link To Owl Carousel------------------------------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
